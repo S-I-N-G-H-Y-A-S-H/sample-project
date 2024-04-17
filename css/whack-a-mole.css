@@ -1,0 +1,58 @@
+body{
+    font-family: arial;
+    text-align: center;
+    background: url("/images/backgroundImage.jpeg");
+    background-size: cover;
+}
+#board{
+    width: 540px;
+    height: 540px;
+    background:url("/images/soil.png");
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    border-radius: 25px;
+    border:3px solid white;
+}
+#board div {
+    /* div board =540x540 as game is 3x3 board therefore each tile div size= 540*540/3*3 ==> 180x180 */
+    width: 180px;
+    height: 180px;
+    background-image: url("/images/pipe.png");
+    background-size: cover;
+}
+#board div img{
+    width: 100px;
+    height: 100px;
+
+
+    /* this makes that the img tags are not selectable and dragable*/
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.restart{
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 4px;
+    font-weight: bold;
+
+}
+.restart:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 30px;
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 4px;
+    font-weight: bold;
+    transition: 0.5s;
+}

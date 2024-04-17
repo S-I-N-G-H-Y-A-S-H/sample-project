@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/rock-paper-scissors.css">
+    <script src="js/rock-paper-scissors.js"></script>
+  </head>
+  
+  <body>
+    <p class="title">Rock Paper Scissors</p>
+    <!-- Rock Button -->
+    <button onclick="
+      playGame('rock');
+    " class="move-button"
+    >
+    <img src="images/rock-emoji.png" class="move-icon">
+
+  </button>
+
+    <!-- Paper Button -->
+    <button onclick="
+      playGame('paper');
+    " class="move-button">
+
+    <img src="images/paper-emoji.png" class="move-icon">
+  </button>
+
+    <!-- Scissors Button -->
+    <button onclick="
+      playGame('scissors');
+    " class="move-button">
+
+    <img src="images/scissors-emoji.png" class="move-icon">
+  </button>
+
+    <!-- this paragraph is to show the result after button the click  -->
+    <p class="js-result result">
+
+    </p>
+    <!-- this paragraph is to show the moves of the player and the computer after button the click  -->
+    <p class="js-moves">
+      
+    </p>
+    <!-- this paragraph is to show the score  after button the click  -->
+    <p class="js-score score">
+
+    </p>
+  
+
+    <!-- reset Score button  -->
+    <button onclick="
+      score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+      // here when we click on the reset score button we need to clear the local storage too .
+      localStorage.removeItem('score');
+      // now display the new reset score on webpage by updateScoreElement() function
+      updateScoreElement();
+    " class="reset-score-button">
+    Reset Score
+  </button>
+
+    
+  </body>
+</html>

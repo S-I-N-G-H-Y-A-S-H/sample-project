@@ -1,0 +1,77 @@
+body{
+    
+
+     background: url("/images/backimage.jpg");
+     background-size: cover;
+     font-family:arial;
+}
+
+
+.header-div{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    height: 180px;
+        
+}
+.minigame-header{
+    background-color: rgb(179, 250, 104);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 140px;
+    color: black;
+    border: 15px solid black ;
+    
+    
+}
+
+
+.controller-img{
+    width: 100px;
+    
+}
+.playgame-para{
+    color:black;
+    background-color: rgb(179, 250, 104);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    display: inline;
+    outline: 5px solid black;
+
+
+}
+.flex-div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 120px;
+    
+    
+    
+}
+.rock-paper-scissors{
+    width: 440px;
+    height: 350px;
+    display: block;
+    cursor: pointer;
+    border: 6px solid rgb(179, 250, 104) ;
+    outline:6px solid black ;
+    
+}
+
+.whack-a-mole{
+    width: 440px;
+    height: 350px;
+    display: block;
+    cursor: pointer;
+    border: 6px solid rgb(179, 250, 104) ;
+    outline:6px solid black ;
+}
+.link-class{
+    width: 440px;
+}
+
